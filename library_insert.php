@@ -89,8 +89,15 @@ class database{
 
 public function lista_categories(){
 	$query3 = "SELECT * FROM categories";
-	$con = $this->connessione->prepare($query3);
-	$con->execute();
+
+	$oggettoquery = $this->connessione->prepare($query3);
+	$oggettoquery->execute();
+
+
+
+
+
+
 }
 
 
