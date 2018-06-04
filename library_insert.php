@@ -76,6 +76,22 @@ class database{
 
 }
 
+// MODIFICHE PER GIT
+
+public function lista_categories(){
+	$query3 = "SELECT * FROM categories";
+
+	$con = $this->connessione->prepare($query3);
+	$query4->execute();
+
+
+
+
+
+
+}
+
+
 //FUNZIONE JSON
 
 public function creaJson($id_cat = null){
