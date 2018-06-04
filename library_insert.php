@@ -46,6 +46,15 @@ class database{
 
 	}
 
+	// select categories
+
+	public function cat_sel ()
+	{
+		$query = "SELECT * FROM categories";
+		$conn = $this->connessione->prepare($query);
+		$conn->execute();
+	}
+
 	// FUNZIONE INSERT
 
 	public function inserisci($titolo, $categoria){
